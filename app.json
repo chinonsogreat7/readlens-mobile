@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Readlens",
+    "slug": "readlens-mobile",
+    "version": "0.1.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "scheme": "readlens",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "app.readlens.assessment"
+    },
+    "android": {
+      "package": "app.readlens.assessment"
+    },
+    "web": {
+      "bundler": "metro"
+    },
+    "plugins": [
+      [
+        "expo-dev-client",
+        {
+          "launchMode": "launcher"
+        }
+      ],
+      "expo-secure-store",
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a photo to attach to your Readlens report.",
+          "cameraPermission": false,
+          "microphonePermission": false
+        }
+      ],
+      "@config-plugins/react-native-pdf",
+      "@config-plugins/react-native-blob-util"
+    ]
+  }
+}
