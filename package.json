@@ -7,7 +7,7 @@
     "submission:check": "npm run check && npm run format:check && npm run security:check",
     "security:check": "node scripts/check-public-files.mjs",
     "config:check": "node scripts/check-config.mjs",
-    "start": "node api.js && expo start --dev-client",
+    "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "start:ios": "expo start --dev-client --ios",
